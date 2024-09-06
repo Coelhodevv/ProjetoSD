@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: msclientes
+server:
+  port: 0 # Quando colocamos a porta zero, essa aplica��o vai subir em uma porta aleat�ria, e porque fazer isso?
+          # Subimos em uma porta rand�mica pois  queremos subir v�rias inst�cias desse microservi�o e toda vez que subimos um microservi�o temos que informar qual porta estamos subindo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://projeto-sd-user:user-sd-projeto@${EUREKA_SERVER}:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value} }
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  file:
+    name: ./logs/log-file.log

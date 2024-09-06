@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eurekaserver
+  security:
+    basic:
+      enable: true
+    user:
+      name: projeto-sd-user
+      password: user-sd-projeto
+
+server:
+  port: 8761
+
+eureka:
+  cliente:
+    register-with-eureka: false
+    fetch-registry: false
