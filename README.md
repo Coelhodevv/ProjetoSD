@@ -1,7 +1,7 @@
-# 🚀 Arquitetura de Microserviços com Comunicação Assíncrona, Eureka, API Gateway e Keycloak
+# 🚀 Arquitetura de Microserviços com Eureka, API Gateway, Comunicação Assíncrona, Keycloak e Docker
 
-Estamos desenvolvendo uma arquitetura de **microserviços** utilizando **comunicação assíncrona**, **mensageria**, **Docker**, **Eureka** para descoberta de serviços, **API Gateway** 
-para roteamento e **Keycloak** para **segurança**.
+Estamos desenvolvendo uma arquitetura de **microserviços** utilizando **Eureka** **comunicação assíncrona**, **mensageria**, **Docker**, para localização de serviços, **API Gateway** 
+para gerenciamentos das requisições para instâncias e **Keycloak** para **segurança**.
 
 
 
@@ -21,7 +21,6 @@ Para evitar a complexidade de múltiplas APIs expostas diretamente, usamos um **
 
 - 🔀 **Centralização** no acesso a todos os microserviços.
 - 🔄 **Roteamento automático** das chamadas para os serviços corretos.
-- 🔐 **Segurança** com autenticação, **rate limiting** e autorização.
 
 O **API Gateway** proporciona uma camada unificada para os clientes, garantindo que eles não precisem se preocupar com os detalhes de qual serviço está rodando em qual porta.
 
